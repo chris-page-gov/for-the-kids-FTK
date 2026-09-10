@@ -1,0 +1,410 @@
+{
+  "schema_version": "0.1.0",
+  "view_id": "synthetic-wigan",
+  "synthetic": true,
+  "subject_ref": "child",
+  "profile": "early-years-handover",
+  "purpose": "Synthetic contract rehearsal only",
+  "locality": "Wigan adapter illustration — not council data",
+  "generated_at": "2026-09-09T11:00:00Z",
+  "as_of": "2026-09-09T11:00:00Z",
+  "policy_ref": "policy-demo",
+  "audience_roles": [
+    "synthetic-reviewer"
+  ],
+  "selected_link_refs": [],
+  "sources": [
+    {
+      "id": "source-demo",
+      "name": "Wholly fictional fixture",
+      "system": "urn:example:ftk:source",
+      "controller": "Fictional demonstration controller",
+      "retrieved_at": "2026-09-09T11:00:00Z",
+      "mode": "synthetic",
+      "mapping_version": "demo-1"
+    }
+  ],
+  "policies": [
+    {
+      "id": "policy-demo",
+      "purpose": "Synthetic contract rehearsal only",
+      "controller": "Fictional demonstration controller",
+      "lawful_basis_ref": "urn:example:synthetic-no-real-personal-data",
+      "allowed_roles": [
+        "synthetic-reviewer"
+      ],
+      "restrictions": [
+        "No operational use; not a real sharing approval"
+      ],
+      "retention_policy_ref": "urn:example:fixture-retention",
+      "review_due": "2026-10-09",
+      "onward_sharing": "requires-review"
+    }
+  ],
+  "coverage": [
+    {
+      "id": "coverage-demo",
+      "source_ref": "source-demo",
+      "domain": "early years rehearsal",
+      "status": "available",
+      "checked_at": "2026-09-09T11:00:00Z",
+      "detail": "Only the fictional records in this file; no national or council completeness claim"
+    }
+  ],
+  "records": {
+    "Person": [
+      {
+        "id": "child",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/child",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_key": "fictional-child",
+        "date_of_birth": "2024-06-09",
+        "birth_precision": "day"
+      },
+      {
+        "id": "parent",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/parent",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_key": "fictional-parent",
+        "birth_precision": "unknown"
+      }
+    ],
+    "Name": [
+      {
+        "id": "child-name",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/child-name",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "use": "chosen",
+        "given": [
+          "Example"
+        ],
+        "family": "Child",
+        "display": "Example Child (fictional)"
+      }
+    ],
+    "Organisation": [
+      {
+        "id": "nursery",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/nursery",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "name": "Example nursery — fictional",
+        "type": {
+          "system": "urn:example:ftk:concepts",
+          "code": "early-years-setting",
+          "display": "early years setting",
+          "version": "demo-1"
+        }
+      },
+      {
+        "id": "health-service",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/health-service",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "name": "Example health-visiting service — fictional",
+        "type": {
+          "system": "urn:example:ftk:concepts",
+          "code": "health-visiting",
+          "display": "health visiting",
+          "version": "demo-1"
+        }
+      }
+    ],
+    "Practitioner": [
+      {
+        "id": "key-person",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/key-person",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "display_name": "Example key person (fictional)",
+        "organisation_ref": "nursery",
+        "role": {
+          "system": "urn:example:ftk:concepts",
+          "code": "key-person",
+          "display": "key person",
+          "version": "demo-1"
+        }
+      },
+      {
+        "id": "health-visitor",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/health-visitor",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "display_name": "Example health visitor (fictional)",
+        "organisation_ref": "health-service",
+        "role": {
+          "system": "urn:example:ftk:concepts",
+          "code": "health-visitor",
+          "display": "health visitor",
+          "version": "demo-1"
+        }
+      }
+    ],
+    "Relationship": [
+      {
+        "id": "parent-link",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/parent-link",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "from_person_ref": "parent",
+        "to_person_ref": "child",
+        "type": {
+          "system": "urn:example:ftk:concepts",
+          "code": "parent-of",
+          "display": "parent of",
+          "version": "demo-1"
+        },
+        "parental_responsibility": "reported"
+      }
+    ],
+    "Identifier": [
+      {
+        "id": "local-id",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/local-id",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "scheme": "urn:example:ftk:fictional-local-id",
+        "issuer": "Fictional Wigan source",
+        "value": "SYNTHETIC-001",
+        "verification": "source-asserted"
+      }
+    ],
+    "Involvement": [
+      {
+        "id": "health-involvement",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/health-involvement",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "organisation_ref": "health-service",
+        "practitioner_ref": "health-visitor",
+        "role": {
+          "system": "urn:example:ftk:concepts",
+          "code": "health-review",
+          "display": "health review",
+          "version": "demo-1"
+        },
+        "status": "active"
+      }
+    ],
+    "Assessment": [
+      {
+        "id": "ey-check",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/ey-check",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "type": {
+          "system": "urn:example:ftk:concepts",
+          "code": "early-years-progress-check",
+          "display": "early years progress check",
+          "version": "demo-1"
+        },
+        "status": "completed",
+        "completed_on": "2026-09-09",
+        "expected_from": "2026-06-09",
+        "expected_to": "2026-12-09",
+        "age_months_at_review": 27,
+        "age_basis": "chronological",
+        "integration_method": "secure-digital",
+        "shared_with_family": true,
+        "field_states": [
+          {
+            "field": "shared_with_family_on",
+            "reason": "not-recorded"
+          }
+        ]
+      }
+    ],
+    "Observation": [
+      {
+        "id": "language-observation",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/language-observation",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "reported",
+        "person_ref": "child",
+        "concept": {
+          "system": "urn:example:ftk:concepts",
+          "code": "communication-support-request",
+          "display": "communication support request",
+          "version": "demo-1"
+        },
+        "value": {
+          "text": "Parent requests advice; this is not a diagnosis or evidence of a submitted referral."
+        },
+        "observed_on": "2026-09-09",
+        "assessment_ref": "ey-check"
+      }
+    ],
+    "EducationEpisode": [
+      {
+        "id": "nursery-episode",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/nursery-episode",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "setting_ref": "nursery",
+        "status": "attending",
+        "effective_from": "2026-04-01",
+        "key_person_ref": "key-person"
+      }
+    ],
+    "Voice": [
+      {
+        "id": "family-priority",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/family-priority",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "speaker_ref": "parent",
+        "kind": "priority",
+        "statement": "Please help us agree what to try at home.",
+        "representation": "practitioner-summary",
+        "captured_on": "2026-09-09"
+      }
+    ],
+    "Acknowledgement": [
+      {
+        "id": "parent-ack",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/parent-ack",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "target_ref": "ey-check",
+        "signatory_ref": "parent",
+        "capacity": {
+          "system": "urn:example:ftk:concepts",
+          "code": "parent",
+          "display": "parent",
+          "version": "demo-1"
+        },
+        "meaning": "discussed",
+        "signed_on": "2026-09-09"
+      }
+    ],
+    "Referral": [
+      {
+        "id": "handover",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/handover",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "kind": "handover",
+        "type": {
+          "system": "urn:example:ftk:concepts",
+          "code": "age-two-review-handover",
+          "display": "age two review handover",
+          "version": "demo-1"
+        },
+        "sender_ref": "nursery",
+        "recipient_ref": "health-service",
+        "status": "received",
+        "sent_at": "2026-09-09T09:00:00Z",
+        "received_at": "2026-09-09T10:00:00Z",
+        "receipt_reference": "SYNTHETIC-RECEIPT-001",
+        "next_action_ref": "discuss-support"
+      }
+    ],
+    "Action": [
+      {
+        "id": "discuss-support",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/discuss-support",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "referral_ref": "handover",
+        "description": "Discuss an appropriate support option with the family",
+        "owner_ref": "health-visitor",
+        "status": "agreed",
+        "due_on": "2026-09-16"
+      },
+      {
+        "id": "send-information",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/send-information",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "description": "Send the requested information leaflet",
+        "owner_ref": "nursery",
+        "status": "completed",
+        "completed_at": "2026-09-09T10:30:00Z",
+        "completion_evidence_refs": [
+          "leaflet-sent"
+        ]
+      },
+      {
+        "id": "parent-activity",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/parent-activity",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "description": "Try the activity agreed with the key person",
+        "owner_ref": "parent",
+        "status": "agreed"
+      }
+    ],
+    "Event": [
+      {
+        "id": "leaflet-sent",
+        "source_ref": "source-demo",
+        "source_record_id": "fictional/leaflet-sent",
+        "policy_ref": "policy-demo",
+        "recorded_at": "2026-09-09T11:00:00Z",
+        "assertion_status": "recorded",
+        "person_ref": "child",
+        "type": {
+          "system": "urn:example:ftk:concepts",
+          "code": "information-sent",
+          "display": "information sent",
+          "version": "demo-1"
+        },
+        "occurred_on": "2026-09-09",
+        "occurred_at": "2026-09-09T10:30:00Z",
+        "status": "occurred",
+        "summary": "Only leaflet dispatch is complete; support receipt is not evidenced."
+      }
+    ]
+  }
+}
