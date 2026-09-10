@@ -1,0 +1,29 @@
+# Default-deny the wider local research workspace. Public Git uses an exact
+# file manifest as a second check; ignoring files alone is not access control.
+/*
+!/.gitignore
+!/.python-version
+!/LICENSE
+!/README.md
+!/AGENTS.md
+!/CONTRIBUTING.md
+!/Makefile
+!/pyproject.toml
+!/uv.lock
+!/publication-files.json
+!/public-git-files.json
+!/.github/
+!/scripts/
+!/tests/
+!/public/
+!/docs/
+/docs/*
+!/docs/maintenance.md
+!/docs/publication.md
+!/docs/linkedin-post.md
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+_site/
+output/

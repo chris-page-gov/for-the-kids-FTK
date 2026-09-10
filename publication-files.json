@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "source": "public/index.html",
+      "destination": "index.html"
+    },
+    {
+      "source": "public/limits.html",
+      "destination": "limits.html"
+    },
+    {
+      "source": "LICENSE",
+      "destination": "LICENSE.txt"
+    },
+    {
+      "source": "public/FTK_OKF_handover.html",
+      "destination": "FTK_OKF_handover.html",
+      "sha256": "28133a28aaf636a00390e090a79b8e7f63cc1d28b99779378d3a526a8c85ecf2"
+    },
+    {
+      "source": "public/FTK_OKF_illustrated_walkthrough.docx",
+      "destination": "FTK_OKF_illustrated_walkthrough.docx",
+      "sha256": "5dcdc74acb8c51a5f3ea23d5bf1a8f4c6fe1910d8a90e12a72706233c540fb46"
+    },
+    {
+      "source": "public/FTK_OKF_illustrated_walkthrough.html",
+      "destination": "FTK_OKF_illustrated_walkthrough.html",
+      "sha256": "a8f96c496bfb46c88a9d9c165178cb0fb066e62490b639f6c532befad585b451"
+    },
+    {
+      "source": "public/downloads/FTK_OKF_evidence.md",
+      "destination": "downloads/FTK_OKF_evidence.md",
+      "sha256": "10d85042fd13ff94c30fe700613a98f022c3075afd612c14dba214ed02cc6e87"
+    },
+    {
+      "source": "public/downloads/okf-bundle.json",
+      "destination": "downloads/okf-bundle.json",
+      "sha256": "0ce6e2048709b31a21362b1fd37ffbe8c272199820b6bc11eaadebabfa86f9de"
+    },
+    {
+      "source": "public/downloads/wigan-handover.json",
+      "destination": "downloads/wigan-handover.json",
+      "sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6"
+    }
+  ]
+}

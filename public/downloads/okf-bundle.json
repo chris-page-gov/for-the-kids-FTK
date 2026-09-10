@@ -1,0 +1,1217 @@
+{
+  "schema": "okf-explorer-bundle.v0",
+  "kind": "okf-bundle",
+  "okf_version": "0.2",
+  "generated_at": "2026-09-09T11:00:00Z",
+  "generated_by": "FTK standalone handover builder v0.1",
+  "meta": {
+    "title": "A reusable early-years handover",
+    "description": "One fictional handover, its unfinished actions and declared evidence.",
+    "default_corpus": "ftk-handover",
+    "corpus_order": [
+      "ftk-handover"
+    ],
+    "release_grade": false,
+    "profile": "https://example.invalid/ftk/handover/profile/v0.1",
+    "limitations": [
+      "Independent experimental OKF 0.2 projection; no complete Bundle Wiki profile claim",
+      "Not a live service or council adapter",
+      "No production access control",
+      "Explorer import not tested in this standalone build"
+    ]
+  },
+  "corpora": {
+    "ftk-handover": {
+      "id": "ftk-handover",
+      "label": "Synthetic handover",
+      "title": "A reusable early-years handover",
+      "root": "index.md",
+      "markdown_url": "./",
+      "source_root": ".",
+      "assertion_scope": "synthetic-fixture",
+      "sections": [
+        "action",
+        "event",
+        "handover",
+        "organisation",
+        "person",
+        "practitioner",
+        "review",
+        "scope",
+        "voice"
+      ],
+      "nodes": {
+        "scope/purpose": {
+          "id": "scope/purpose",
+          "route": "scope/purpose",
+          "semantic_id": "https://example.invalid/ftk/handover/id/scope/purpose",
+          "title": "Rehearsal scope",
+          "type": "Scope",
+          "section": "scope",
+          "description": "One fictional handover. No real child data, service connection or sharing approval.",
+          "body": "# Rehearsal scope\n\nSynthetic demonstration only.\n\nOne fictional handover. No real child data, service connection or sharing approval.\n\n## Source facts\n\n```json\n{\n  \"id\": \"policy-demo\",\n  \"purpose\": \"Synthetic contract rehearsal only\",\n  \"controller\": \"Fictional demonstration controller\",\n  \"lawful_basis_ref\": \"urn:example:synthetic-no-real-personal-data\",\n  \"allowed_roles\": [\n    \"synthetic-reviewer\"\n  ],\n  \"restrictions\": [\n    \"No operational use; not a real sharing approval\"\n  ],\n  \"retention_policy_ref\": \"urn:example:fixture-retention\",\n  \"review_due\": \"2026-10-09\",\n  \"onward_sharing\": \"requires-review\"\n}\n```\n\nSource: wigan-handover.json#/policies/0\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "policy-demo",
+            "purpose": "Synthetic contract rehearsal only",
+            "controller": "Fictional demonstration controller",
+            "lawful_basis_ref": "urn:example:synthetic-no-real-personal-data",
+            "allowed_roles": [
+              "synthetic-reviewer"
+            ],
+            "restrictions": [
+              "No operational use; not a real sharing approval"
+            ],
+            "retention_policy_ref": "urn:example:fixture-retention",
+            "review_due": "2026-10-09",
+            "onward_sharing": "requires-review"
+          },
+          "source_pointer": "/policies/0",
+          "source": "concepts/scope/purpose.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/policies/0",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "person/child": {
+          "id": "person/child",
+          "route": "person/child",
+          "semantic_id": "https://example.invalid/ftk/handover/id/person/child",
+          "title": "Example Child",
+          "type": "Person",
+          "section": "person",
+          "description": "Wholly fictional child, aged 27 months at the review.",
+          "body": "# Example Child\n\nSynthetic demonstration only.\n\nWholly fictional child, aged 27 months at the review.\n\n## Source facts\n\n```json\n{\n  \"id\": \"child\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/child\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"person_key\": \"fictional-child\",\n  \"date_of_birth\": \"2024-06-09\",\n  \"birth_precision\": \"day\"\n}\n```\n\nSource: wigan-handover.json#/records/Person/0\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "child",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/child",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "person_key": "fictional-child",
+            "date_of_birth": "2024-06-09",
+            "birth_precision": "day"
+          },
+          "source_pointer": "/records/Person/0",
+          "source": "concepts/person/child.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Person/0",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "person/parent": {
+          "id": "person/parent",
+          "route": "person/parent",
+          "semantic_id": "https://example.invalid/ftk/handover/id/person/parent",
+          "title": "Example parent",
+          "type": "Person",
+          "section": "person",
+          "description": "Fictional parent. Parental responsibility is reported in the source, not independently verified.",
+          "body": "# Example parent\n\nSynthetic demonstration only.\n\nFictional parent. Parental responsibility is reported in the source, not independently verified.\n\n## Source facts\n\n```json\n{\n  \"id\": \"parent\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/parent\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"person_key\": \"fictional-parent\",\n  \"birth_precision\": \"unknown\"\n}\n```\n\nSource: wigan-handover.json#/records/Person/1\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "parent",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/parent",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "person_key": "fictional-parent",
+            "birth_precision": "unknown"
+          },
+          "source_pointer": "/records/Person/1",
+          "source": "concepts/person/parent.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Person/1",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "organisation/nursery": {
+          "id": "organisation/nursery",
+          "route": "organisation/nursery",
+          "semantic_id": "https://example.invalid/ftk/handover/id/organisation/nursery",
+          "title": "Example nursery",
+          "type": "Organisation",
+          "section": "organisation",
+          "description": "Fictional sending setting and owner of leaflet dispatch.",
+          "body": "# Example nursery\n\nSynthetic demonstration only.\n\nFictional sending setting and owner of leaflet dispatch.\n\n## Source facts\n\n```json\n{\n  \"id\": \"nursery\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/nursery\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"name\": \"Example nursery — fictional\",\n  \"type\": {\n    \"system\": \"urn:example:ftk:concepts\",\n    \"code\": \"early-years-setting\",\n    \"display\": \"early years setting\",\n    \"version\": \"demo-1\"\n  }\n}\n```\n\nSource: wigan-handover.json#/records/Organisation/0\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "nursery",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/nursery",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "name": "Example nursery — fictional",
+            "type": {
+              "system": "urn:example:ftk:concepts",
+              "code": "early-years-setting",
+              "display": "early years setting",
+              "version": "demo-1"
+            }
+          },
+          "source_pointer": "/records/Organisation/0",
+          "source": "concepts/organisation/nursery.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Organisation/0",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "organisation/health-service": {
+          "id": "organisation/health-service",
+          "route": "organisation/health-service",
+          "semantic_id": "https://example.invalid/ftk/handover/id/organisation/health-service",
+          "title": "Example health-visiting service",
+          "type": "Organisation",
+          "section": "organisation",
+          "description": "Fictional receiving service.",
+          "body": "# Example health-visiting service\n\nSynthetic demonstration only.\n\nFictional receiving service.\n\n## Source facts\n\n```json\n{\n  \"id\": \"health-service\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/health-service\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"name\": \"Example health-visiting service — fictional\",\n  \"type\": {\n    \"system\": \"urn:example:ftk:concepts\",\n    \"code\": \"health-visiting\",\n    \"display\": \"health visiting\",\n    \"version\": \"demo-1\"\n  }\n}\n```\n\nSource: wigan-handover.json#/records/Organisation/1\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "health-service",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/health-service",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "name": "Example health-visiting service — fictional",
+            "type": {
+              "system": "urn:example:ftk:concepts",
+              "code": "health-visiting",
+              "display": "health visiting",
+              "version": "demo-1"
+            }
+          },
+          "source_pointer": "/records/Organisation/1",
+          "source": "concepts/organisation/health-service.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Organisation/1",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "practitioner/health-visitor": {
+          "id": "practitioner/health-visitor",
+          "route": "practitioner/health-visitor",
+          "semantic_id": "https://example.invalid/ftk/handover/id/practitioner/health-visitor",
+          "title": "Example health visitor",
+          "type": "Practitioner",
+          "section": "practitioner",
+          "description": "Fictional owner of the agreed support discussion.",
+          "body": "# Example health visitor\n\nSynthetic demonstration only.\n\nFictional owner of the agreed support discussion.\n\n## Source facts\n\n```json\n{\n  \"id\": \"health-visitor\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/health-visitor\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"display_name\": \"Example health visitor (fictional)\",\n  \"organisation_ref\": \"health-service\",\n  \"role\": {\n    \"system\": \"urn:example:ftk:concepts\",\n    \"code\": \"health-visitor\",\n    \"display\": \"health visitor\",\n    \"version\": \"demo-1\"\n  }\n}\n```\n\nSource: wigan-handover.json#/records/Practitioner/1\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "health-visitor",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/health-visitor",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "display_name": "Example health visitor (fictional)",
+            "organisation_ref": "health-service",
+            "role": {
+              "system": "urn:example:ftk:concepts",
+              "code": "health-visitor",
+              "display": "health visitor",
+              "version": "demo-1"
+            }
+          },
+          "source_pointer": "/records/Practitioner/1",
+          "source": "concepts/practitioner/health-visitor.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Practitioner/1",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "review/progress-check": {
+          "id": "review/progress-check",
+          "route": "review/progress-check",
+          "semantic_id": "https://example.invalid/ftk/handover/id/review/progress-check",
+          "title": "Early-years progress check",
+          "type": "Review",
+          "section": "review",
+          "description": "Completed review on 9 September 2026. Completion of a review does not establish delivery of support.",
+          "body": "# Early-years progress check\n\nSynthetic demonstration only.\n\nCompleted review on 9 September 2026. Completion of a review does not establish delivery of support.\n\n## Source facts\n\n```json\n{\n  \"id\": \"ey-check\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/ey-check\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"person_ref\": \"child\",\n  \"type\": {\n    \"system\": \"urn:example:ftk:concepts\",\n    \"code\": \"early-years-progress-check\",\n    \"display\": \"early years progress check\",\n    \"version\": \"demo-1\"\n  },\n  \"status\": \"completed\",\n  \"completed_on\": \"2026-09-09\",\n  \"expected_from\": \"2026-06-09\",\n  \"expected_to\": \"2026-12-09\",\n  \"age_months_at_review\": 27,\n  \"age_basis\": \"chronological\",\n  \"integration_method\": \"secure-digital\",\n  \"shared_with_family\": true,\n  \"field_states\": [\n    {\n      \"field\": \"shared_with_family_on\",\n      \"reason\": \"not-recorded\"\n    }\n  ]\n}\n```\n\nSource: wigan-handover.json#/records/Assessment/0\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "ey-check",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/ey-check",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "person_ref": "child",
+            "type": {
+              "system": "urn:example:ftk:concepts",
+              "code": "early-years-progress-check",
+              "display": "early years progress check",
+              "version": "demo-1"
+            },
+            "status": "completed",
+            "completed_on": "2026-09-09",
+            "expected_from": "2026-06-09",
+            "expected_to": "2026-12-09",
+            "age_months_at_review": 27,
+            "age_basis": "chronological",
+            "integration_method": "secure-digital",
+            "shared_with_family": true,
+            "field_states": [
+              {
+                "field": "shared_with_family_on",
+                "reason": "not-recorded"
+              }
+            ]
+          },
+          "source_pointer": "/records/Assessment/0",
+          "source": "concepts/review/progress-check.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Assessment/0",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "voice/family-priority": {
+          "id": "voice/family-priority",
+          "route": "voice/family-priority",
+          "semantic_id": "https://example.invalid/ftk/handover/id/voice/family-priority",
+          "title": "What matters to the family",
+          "type": "Family voice",
+          "section": "voice",
+          "description": "Please help us agree what to try at home. This is a practitioner summary of a fictional parent priority.",
+          "body": "# What matters to the family\n\nSynthetic demonstration only.\n\nPlease help us agree what to try at home. This is a practitioner summary of a fictional parent priority.\n\n## Source facts\n\n```json\n{\n  \"id\": \"family-priority\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/family-priority\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"person_ref\": \"child\",\n  \"speaker_ref\": \"parent\",\n  \"kind\": \"priority\",\n  \"statement\": \"Please help us agree what to try at home.\",\n  \"representation\": \"practitioner-summary\",\n  \"captured_on\": \"2026-09-09\"\n}\n```\n\nSource: wigan-handover.json#/records/Voice/0\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "family-priority",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/family-priority",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "person_ref": "child",
+            "speaker_ref": "parent",
+            "kind": "priority",
+            "statement": "Please help us agree what to try at home.",
+            "representation": "practitioner-summary",
+            "captured_on": "2026-09-09"
+          },
+          "source_pointer": "/records/Voice/0",
+          "source": "concepts/voice/family-priority.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Voice/0",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "handover/nursery-to-health": {
+          "id": "handover/nursery-to-health",
+          "route": "handover/nursery-to-health",
+          "semantic_id": "https://example.invalid/ftk/handover/id/handover/nursery-to-health",
+          "title": "Nursery to health-visiting handover",
+          "type": "Handover",
+          "section": "handover",
+          "description": "Recorded as received. Its next service action remains agreed, not completed.",
+          "body": "# Nursery to health-visiting handover\n\nSynthetic demonstration only.\n\nRecorded as received. Its next service action remains agreed, not completed.\n\n## Source facts\n\n```json\n{\n  \"id\": \"handover\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/handover\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"person_ref\": \"child\",\n  \"kind\": \"handover\",\n  \"type\": {\n    \"system\": \"urn:example:ftk:concepts\",\n    \"code\": \"age-two-review-handover\",\n    \"display\": \"age two review handover\",\n    \"version\": \"demo-1\"\n  },\n  \"sender_ref\": \"nursery\",\n  \"recipient_ref\": \"health-service\",\n  \"status\": \"received\",\n  \"sent_at\": \"2026-09-09T09:00:00Z\",\n  \"received_at\": \"2026-09-09T10:00:00Z\",\n  \"receipt_reference\": \"SYNTHETIC-RECEIPT-001\",\n  \"next_action_ref\": \"discuss-support\"\n}\n```\n\nSource: wigan-handover.json#/records/Referral/0\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "handover",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/handover",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "person_ref": "child",
+            "kind": "handover",
+            "type": {
+              "system": "urn:example:ftk:concepts",
+              "code": "age-two-review-handover",
+              "display": "age two review handover",
+              "version": "demo-1"
+            },
+            "sender_ref": "nursery",
+            "recipient_ref": "health-service",
+            "status": "received",
+            "sent_at": "2026-09-09T09:00:00Z",
+            "received_at": "2026-09-09T10:00:00Z",
+            "receipt_reference": "SYNTHETIC-RECEIPT-001",
+            "next_action_ref": "discuss-support"
+          },
+          "source_pointer": "/records/Referral/0",
+          "source": "concepts/handover/nursery-to-health.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Referral/0",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "action/discuss-support": {
+          "id": "action/discuss-support",
+          "route": "action/discuss-support",
+          "semantic_id": "https://example.invalid/ftk/handover/id/action/discuss-support",
+          "title": "Discuss a support option",
+          "type": "Action",
+          "section": "action",
+          "description": "Agreed discussion, owned by the Example health visitor, due 16 September 2026.",
+          "body": "# Discuss a support option\n\nSynthetic demonstration only.\n\nAgreed discussion, owned by the Example health visitor, due 16 September 2026.\n\n## Source facts\n\n```json\n{\n  \"id\": \"discuss-support\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/discuss-support\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"person_ref\": \"child\",\n  \"referral_ref\": \"handover\",\n  \"description\": \"Discuss an appropriate support option with the family\",\n  \"owner_ref\": \"health-visitor\",\n  \"status\": \"agreed\",\n  \"due_on\": \"2026-09-16\"\n}\n```\n\nSource: wigan-handover.json#/records/Action/0\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "discuss-support",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/discuss-support",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "person_ref": "child",
+            "referral_ref": "handover",
+            "description": "Discuss an appropriate support option with the family",
+            "owner_ref": "health-visitor",
+            "status": "agreed",
+            "due_on": "2026-09-16"
+          },
+          "source_pointer": "/records/Action/0",
+          "source": "concepts/action/discuss-support.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/0",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "action/send-information": {
+          "id": "action/send-information",
+          "route": "action/send-information",
+          "semantic_id": "https://example.invalid/ftk/handover/id/action/send-information",
+          "title": "Send an information leaflet",
+          "type": "Action",
+          "section": "action",
+          "description": "Completed leaflet dispatch. It does not establish support received.",
+          "body": "# Send an information leaflet\n\nSynthetic demonstration only.\n\nCompleted leaflet dispatch. It does not establish support received.\n\n## Source facts\n\n```json\n{\n  \"id\": \"send-information\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/send-information\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"person_ref\": \"child\",\n  \"description\": \"Send the requested information leaflet\",\n  \"owner_ref\": \"nursery\",\n  \"status\": \"completed\",\n  \"completed_at\": \"2026-09-09T10:30:00Z\",\n  \"completion_evidence_refs\": [\n    \"leaflet-sent\"\n  ]\n}\n```\n\nSource: wigan-handover.json#/records/Action/1\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "send-information",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/send-information",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "person_ref": "child",
+            "description": "Send the requested information leaflet",
+            "owner_ref": "nursery",
+            "status": "completed",
+            "completed_at": "2026-09-09T10:30:00Z",
+            "completion_evidence_refs": [
+              "leaflet-sent"
+            ]
+          },
+          "source_pointer": "/records/Action/1",
+          "source": "concepts/action/send-information.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/1",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "event/leaflet-sent": {
+          "id": "event/leaflet-sent",
+          "route": "event/leaflet-sent",
+          "semantic_id": "https://example.invalid/ftk/handover/id/event/leaflet-sent",
+          "title": "Leaflet dispatch evidence",
+          "type": "Event",
+          "section": "event",
+          "description": "Recorded dispatch event. Support receipt is not evidenced.",
+          "body": "# Leaflet dispatch evidence\n\nSynthetic demonstration only.\n\nRecorded dispatch event. Support receipt is not evidenced.\n\n## Source facts\n\n```json\n{\n  \"id\": \"leaflet-sent\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/leaflet-sent\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"person_ref\": \"child\",\n  \"type\": {\n    \"system\": \"urn:example:ftk:concepts\",\n    \"code\": \"information-sent\",\n    \"display\": \"information sent\",\n    \"version\": \"demo-1\"\n  },\n  \"occurred_on\": \"2026-09-09\",\n  \"occurred_at\": \"2026-09-09T10:30:00Z\",\n  \"status\": \"occurred\",\n  \"summary\": \"Only leaflet dispatch is complete; support receipt is not evidenced.\"\n}\n```\n\nSource: wigan-handover.json#/records/Event/0\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "leaflet-sent",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/leaflet-sent",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "person_ref": "child",
+            "type": {
+              "system": "urn:example:ftk:concepts",
+              "code": "information-sent",
+              "display": "information sent",
+              "version": "demo-1"
+            },
+            "occurred_on": "2026-09-09",
+            "occurred_at": "2026-09-09T10:30:00Z",
+            "status": "occurred",
+            "summary": "Only leaflet dispatch is complete; support receipt is not evidenced."
+          },
+          "source_pointer": "/records/Event/0",
+          "source": "concepts/event/leaflet-sent.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Event/0",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        },
+        "action/parent-activity": {
+          "id": "action/parent-activity",
+          "route": "action/parent-activity",
+          "semantic_id": "https://example.invalid/ftk/handover/id/action/parent-activity",
+          "title": "Try the agreed activity",
+          "type": "Action",
+          "section": "action",
+          "description": "Agreed parent activity. No due date or completion is recorded.",
+          "body": "# Try the agreed activity\n\nSynthetic demonstration only.\n\nAgreed parent activity. No due date or completion is recorded.\n\n## Source facts\n\n```json\n{\n  \"id\": \"parent-activity\",\n  \"source_ref\": \"source-demo\",\n  \"source_record_id\": \"fictional/parent-activity\",\n  \"policy_ref\": \"policy-demo\",\n  \"recorded_at\": \"2026-09-09T11:00:00Z\",\n  \"assertion_status\": \"recorded\",\n  \"person_ref\": \"child\",\n  \"description\": \"Try the activity agreed with the key person\",\n  \"owner_ref\": \"parent\",\n  \"status\": \"agreed\"\n}\n```\n\nSource: wigan-handover.json#/records/Action/2\nSHA-256: e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6\n",
+          "facts": {
+            "id": "parent-activity",
+            "source_ref": "source-demo",
+            "source_record_id": "fictional/parent-activity",
+            "policy_ref": "policy-demo",
+            "recorded_at": "2026-09-09T11:00:00Z",
+            "assertion_status": "recorded",
+            "person_ref": "child",
+            "description": "Try the activity agreed with the key person",
+            "owner_ref": "parent",
+            "status": "agreed"
+          },
+          "source_pointer": "/records/Action/2",
+          "source": "concepts/action/parent-activity.md",
+          "assertion_scope": "synthetic-fixture",
+          "status": "experimental",
+          "tags": [
+            "synthetic",
+            "Challenge 3"
+          ],
+          "sources": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/2",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ]
+        }
+      },
+      "relationships": [
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/93a6ae10b226824de649aa32",
+          "source": "practitioner/health-visitor",
+          "target": "organisation/health-service",
+          "source_iri": "https://example.invalid/ftk/handover/id/practitioner/health-visitor",
+          "target_iri": "https://example.invalid/ftk/handover/id/organisation/health-service",
+          "predicate": "https://example.invalid/ftk/handover/vocab/works-for",
+          "kind": "works-for",
+          "label": "works for",
+          "inverse_label": "has a practitioner",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Practitioner/1/organisation_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/0948f6fdc45dba5cd48c7edf",
+          "source": "review/progress-check",
+          "target": "person/child",
+          "source_iri": "https://example.invalid/ftk/handover/id/review/progress-check",
+          "target_iri": "https://example.invalid/ftk/handover/id/person/child",
+          "predicate": "https://example.invalid/ftk/handover/vocab/about-person",
+          "kind": "about-person",
+          "label": "is about",
+          "inverse_label": "is the subject of",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Assessment/0/person_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/02b9e6012e0d7b2dac0ec7dd",
+          "source": "voice/family-priority",
+          "target": "person/child",
+          "source_iri": "https://example.invalid/ftk/handover/id/voice/family-priority",
+          "target_iri": "https://example.invalid/ftk/handover/id/person/child",
+          "predicate": "https://example.invalid/ftk/handover/vocab/about-person",
+          "kind": "about-person",
+          "label": "is about",
+          "inverse_label": "is the subject of",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Voice/0/person_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/6ae146d71db1e3a5ef6e07f4",
+          "source": "voice/family-priority",
+          "target": "person/parent",
+          "source_iri": "https://example.invalid/ftk/handover/id/voice/family-priority",
+          "target_iri": "https://example.invalid/ftk/handover/id/person/parent",
+          "predicate": "https://example.invalid/ftk/handover/vocab/attributed-to",
+          "kind": "attributed-to",
+          "label": "is attributed to",
+          "inverse_label": "has an attributed priority",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Voice/0/speaker_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/807e16361cad29f5950740d8",
+          "source": "handover/nursery-to-health",
+          "target": "person/child",
+          "source_iri": "https://example.invalid/ftk/handover/id/handover/nursery-to-health",
+          "target_iri": "https://example.invalid/ftk/handover/id/person/child",
+          "predicate": "https://example.invalid/ftk/handover/vocab/about-person",
+          "kind": "about-person",
+          "label": "is about",
+          "inverse_label": "is the subject of",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Referral/0/person_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/62226a5a1365c16263a69374",
+          "source": "handover/nursery-to-health",
+          "target": "organisation/nursery",
+          "source_iri": "https://example.invalid/ftk/handover/id/handover/nursery-to-health",
+          "target_iri": "https://example.invalid/ftk/handover/id/organisation/nursery",
+          "predicate": "https://example.invalid/ftk/handover/vocab/sent-by",
+          "kind": "sent-by",
+          "label": "was sent by",
+          "inverse_label": "sent",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Referral/0/sender_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/db9c5706b7fcba597713a336",
+          "source": "handover/nursery-to-health",
+          "target": "organisation/health-service",
+          "source_iri": "https://example.invalid/ftk/handover/id/handover/nursery-to-health",
+          "target_iri": "https://example.invalid/ftk/handover/id/organisation/health-service",
+          "predicate": "https://example.invalid/ftk/handover/vocab/received-by",
+          "kind": "received-by",
+          "label": "has recorded recipient",
+          "inverse_label": "is the recorded recipient of",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Referral/0/recipient_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/9c73c5fc398064edeb796ea5",
+          "source": "handover/nursery-to-health",
+          "target": "action/discuss-support",
+          "source_iri": "https://example.invalid/ftk/handover/id/handover/nursery-to-health",
+          "target_iri": "https://example.invalid/ftk/handover/id/action/discuss-support",
+          "predicate": "https://example.invalid/ftk/handover/vocab/next-action",
+          "kind": "next-action",
+          "label": "has next action",
+          "inverse_label": "is the next action for",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Referral/0/next_action_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/f5eafcf40f665d2574b48b45",
+          "source": "action/discuss-support",
+          "target": "person/child",
+          "source_iri": "https://example.invalid/ftk/handover/id/action/discuss-support",
+          "target_iri": "https://example.invalid/ftk/handover/id/person/child",
+          "predicate": "https://example.invalid/ftk/handover/vocab/about-person",
+          "kind": "about-person",
+          "label": "is about",
+          "inverse_label": "is the subject of",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/0/person_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/8de6f5502189c102c770003e",
+          "source": "action/discuss-support",
+          "target": "practitioner/health-visitor",
+          "source_iri": "https://example.invalid/ftk/handover/id/action/discuss-support",
+          "target_iri": "https://example.invalid/ftk/handover/id/practitioner/health-visitor",
+          "predicate": "https://example.invalid/ftk/handover/vocab/owned-by",
+          "kind": "owned-by",
+          "label": "is owned by",
+          "inverse_label": "owns",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/0/owner_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/1ae5fa9d908de6b2d5dad75e",
+          "source": "action/discuss-support",
+          "target": "handover/nursery-to-health",
+          "source_iri": "https://example.invalid/ftk/handover/id/action/discuss-support",
+          "target_iri": "https://example.invalid/ftk/handover/id/handover/nursery-to-health",
+          "predicate": "https://example.invalid/ftk/handover/vocab/follows-handover",
+          "kind": "follows-handover",
+          "label": "follows handover",
+          "inverse_label": "precedes action",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/0/referral_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/b78c250a503ff9737418b6db",
+          "source": "action/send-information",
+          "target": "person/child",
+          "source_iri": "https://example.invalid/ftk/handover/id/action/send-information",
+          "target_iri": "https://example.invalid/ftk/handover/id/person/child",
+          "predicate": "https://example.invalid/ftk/handover/vocab/about-person",
+          "kind": "about-person",
+          "label": "is about",
+          "inverse_label": "is the subject of",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/1/person_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/8a0d7f568e2ef91424fd9f6b",
+          "source": "action/send-information",
+          "target": "organisation/nursery",
+          "source_iri": "https://example.invalid/ftk/handover/id/action/send-information",
+          "target_iri": "https://example.invalid/ftk/handover/id/organisation/nursery",
+          "predicate": "https://example.invalid/ftk/handover/vocab/owned-by",
+          "kind": "owned-by",
+          "label": "is owned by",
+          "inverse_label": "owns",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/1/owner_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/38ef63c801972231446f7ea2",
+          "source": "action/send-information",
+          "target": "event/leaflet-sent",
+          "source_iri": "https://example.invalid/ftk/handover/id/action/send-information",
+          "target_iri": "https://example.invalid/ftk/handover/id/event/leaflet-sent",
+          "predicate": "https://example.invalid/ftk/handover/vocab/completion-evidence",
+          "kind": "completion-evidence",
+          "label": "cites completion evidence",
+          "inverse_label": "is completion evidence for",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/1/completion_evidence_refs/0",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/428a0b9b884aaad454124723",
+          "source": "event/leaflet-sent",
+          "target": "person/child",
+          "source_iri": "https://example.invalid/ftk/handover/id/event/leaflet-sent",
+          "target_iri": "https://example.invalid/ftk/handover/id/person/child",
+          "predicate": "https://example.invalid/ftk/handover/vocab/about-person",
+          "kind": "about-person",
+          "label": "is about",
+          "inverse_label": "is the subject of",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Event/0/person_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/82d6cffca041d5555ab819b8",
+          "source": "action/parent-activity",
+          "target": "person/child",
+          "source_iri": "https://example.invalid/ftk/handover/id/action/parent-activity",
+          "target_iri": "https://example.invalid/ftk/handover/id/person/child",
+          "predicate": "https://example.invalid/ftk/handover/vocab/about-person",
+          "kind": "about-person",
+          "label": "is about",
+          "inverse_label": "is the subject of",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/2/person_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        },
+        {
+          "schema": "okf-relationship-assertion.v2",
+          "id": "https://example.invalid/ftk/handover/assertion/b03575cb9b0251f6f9d132cb",
+          "source": "action/parent-activity",
+          "target": "person/parent",
+          "source_iri": "https://example.invalid/ftk/handover/id/action/parent-activity",
+          "target_iri": "https://example.invalid/ftk/handover/id/person/parent",
+          "predicate": "https://example.invalid/ftk/handover/vocab/owned-by",
+          "kind": "owned-by",
+          "label": "is owned by",
+          "inverse_label": "owns",
+          "assertion_scope": "synthetic-fixture",
+          "assertion_status": "normalized",
+          "authority": {
+            "class": "synthetic",
+            "label": "Fictional source fixture; no public authority",
+            "source": "https://example.invalid/ftk/handover/sources/wigan-handover.json"
+          },
+          "derivation": "https://example.invalid/ftk/handover/profile/explicit-field-projection-v0.1",
+          "observed_at": "2026-09-09T11:00:00Z",
+          "evidence": [
+            {
+              "url": "https://example.invalid/ftk/handover/sources/wigan-handover.json",
+              "source_artifact": "sources/wigan-handover.json",
+              "source_sha256": "e9b3102333966f90d76e847630b91e2664630b563af5fc7b25e0841c82c50ed6",
+              "locator": "json-pointer:/records/Action/2/owner_ref",
+              "retrieved_at": "2026-09-09T11:00:00Z",
+              "url_status": "synthetic-identifier-not-dereferenced"
+            }
+          ],
+          "rights": {
+            "assertion": "Synthetic demonstration material. No rights claim over council source publications.",
+            "source": "https://example.invalid/ftk/handover/scope/terms"
+          }
+        }
+      ]
+    }
+  }
+}

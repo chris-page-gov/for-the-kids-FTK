@@ -1,0 +1,31 @@
+{
+  "files": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/pages.yml",
+    ".gitignore",
+    ".python-version",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "Makefile",
+    "README.md",
+    "docs/maintenance.md",
+    "docs/publication.md",
+    "public-git-files.json",
+    "public/FTK_OKF_handover.html",
+    "public/FTK_OKF_illustrated_walkthrough.docx",
+    "public/FTK_OKF_illustrated_walkthrough.html",
+    "public/downloads/FTK_OKF_evidence.md",
+    "public/downloads/okf-bundle.json",
+    "public/downloads/wigan-handover.json",
+    "public/index.html",
+    "public/limits.html",
+    "publication-files.json",
+    "pyproject.toml",
+    "scripts/browser_check.py",
+    "scripts/impact.py",
+    "scripts/site.py",
+    "tests/test_publication.py",
+    "uv.lock"
+  ]
+}
