@@ -81,9 +81,12 @@ def check(url, channel, output, expected_sha):
             checks.append("Word guide downloaded through the actual page link")
 
             page.get_by_role("link", name="Read the walkthrough", exact=True).click()
+            # URL commitment can precede parsing this illustrated 3.7 MB page.
+            # Local previews hide that delay; HTTPS checks must wait for the DOM.
+            page.wait_for_load_state("domcontentloaded")
             assert page.url.endswith("FTK_OKF_illustrated_walkthrough.html")
             urls.append(page.url)
-            assert page.locator(".step").count() == 22
+            expect(page.locator(".step")).to_have_count(22)
             assert page.locator("figure").count() == 32
             page.get_by_role("button", name="Manager account", exact=True).click()
             assert page.locator(".novice:visible").count() == 0
