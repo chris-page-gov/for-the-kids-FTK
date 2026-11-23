@@ -7,6 +7,10 @@ links, file integrity and public Git inventory. `scripts/browser_check.py`
 exercises the actual URLs, guide controls, synthetic evidence check and
 downloads. `scripts/impact.py` selects the smaller prose-only CI path.
 
+The CI validation and Pages build jobs use Ubuntu 24.04 because the locked
+Playwright 1.58.0 browser installer does not support Ubuntu 26.04. The
+`.python-version`, uv and browser pins remain unchanged.
+
 ```sh
 uv sync --locked
 make validate
