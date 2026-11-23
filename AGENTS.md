@@ -25,3 +25,12 @@ Their limitations are part of the teaching material. Changes require updating
 their immutable hashes and reviewing the guide's screenshots and narrative.
 Do not describe synthetic locality labels as real council integrations, or
 the standalone projection as tested Svelte Explorer acceptance.
+
+<!-- okf-standards:start -->
+## OKF standards references
+
+Use the [central OKF standards and bundle catalogue](https://github.com/chris-page-gov/okf-explorer/blob/main/docs/okf-standards.md)
+and its [machine-readable register](https://raw.githubusercontent.com/chris-page-gov/okf-explorer/main/registry/okf-standards.json)
+before changing specification links or an OKF version declaration. Resolve the
+implemented version through the shared register and preserve historical pins.
+<!-- okf-standards:end -->

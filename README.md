@@ -32,6 +32,11 @@ Explorer has not been tested for this standalone release. An identifier,
 schema check or AI answer does not establish identity, information-sharing
 permission or a real-world outcome.
 
+For current and historical specifications, separately versioned profiles and
+public bundle discovery, see the [central OKF standards register](https://github.com/chris-page-gov/okf-explorer/blob/main/docs/okf-standards.md)
+and its [machine-readable register](https://raw.githubusercontent.com/chris-page-gov/okf-explorer/main/registry/okf-standards.json).
+This reference does not change the bundle's declared OKF 0.2 version.
+
 ## Maintain and publish
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
